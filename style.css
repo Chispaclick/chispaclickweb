@@ -1,0 +1,383 @@
+/* Estilos básicos para el cuerpo y la tipografía */
+
+
+
+body {
+    background: url(/Imagenes/abstract-1891289_1920.jpg);
+    font-family: 'Orbitron', sans-serif;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid blue;
+}
+
+/* Estilos del encabezado */
+header {
+    background: url(/Imagenes/abstract-1891289_1920.jpg);
+    background: linear-gradient(#055);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 114px;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.logo {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+
+.search-bar {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navegacion {
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/* Estilos para la barra de menú */
+.navegacion .nav .menu {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around; /* Espacio igual entre los elementos */
+    background-color: #444;
+    text-align: center;
+}
+
+/* Estilos para cada elemento de la barra de menú */
+.navegacion .nav .menu li {
+    flex-grow: 1; /* Hace que cada elemento ocupe el mismo espacio */
+    align-items: center;
+}
+
+/* Estilos para los enlaces del menú */
+.navegacion .nav .menu li a {
+    color: rgb(255,0,0);
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold;
+    padding: 15px 0; /* Espacio superior e inferior dentro del enlace */
+    display: block; /* Hace que el enlace ocupe todo el espacio del 'li' */
+    text-align: center; /* Centra el texto dentro de cada enlace */
+    transition: background-color 0.3s ease;
+}
+
+/* Cambio de color al pasar el mouse sobre los enlaces */
+.navegacion .nav .menu li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    text-shadow: 
+                0 0 5px rgb(255,0,0),  /* Primer nivel de sombra cercano */
+                0 0 10px rgb(255,0,0), /* Sombra intermedia */
+                0 0 20px rgb(255,0,0), /* Sombra más brillante */
+                0 0 40px rgb(255,0,0), /* Halo extendido */
+                0 0 80px rgb(255,0,0); /* Luz intensa extendida */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.content-wrapper {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content:space-between;
+    width: 60%;
+    padding: 30px;
+
+  /*  border: 1px solid red;*/
+}
+
+
+.tituloCaja{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.box-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 290px;
+ /* border: 1px solid red;*/
+    margin: 15px;
+}
+
+
+.box-wrapper {
+    flex-direction: column;
+    width: 50%;
+ /*   border: solid 1px red;*/
+    align-items: center;
+
+
+}
+ 
+.box-text {
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 15px;
+   /* border: 1px solid red;*/
+    height: 50%;
+}
+
+
+.box-temp {
+    justify-content: center;
+    align-items: center;
+  /*  border: 1px solid red;*/
+    margin: 15px;
+
+}
+
+
+.box-img {
+    width: 50%;
+    margin: 15px 15px 15px 0;
+  /*  border: 1px red solid;*/
+}
+
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.titulo-videos {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.youtube {
+    width: 20%;
+    padding: 15px;
+    margin: 0 30px 0 0;
+    border: 0 1px 0 0 solid #333;
+}
+
+
+.youtubeVideo {
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    margin: 15px 0;
+   /* border: solid 1px green;*/
+    
+}
+    
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+
+.poro {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  /*  border: 1px solid red;    */
+    margin: 0 0 50px 0;
+}
+
+
+.img {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.anuncios {
+    align-items: center;
+    width: 15%;
+    padding: 15px;
+  /*  border: 1px solid red;*/
+
+}
+
+
+.titulo-anuncios {
+    text-align: center;
+}
+.anuncio-box {
+    width: 100%;
+  /*  border: 1px solid red;*/
+}
+
+
+footer {
+    background-color: #161616;
+    width: 100%;
+    color: #fff;
+    display: flex;   
+    justify-content: center;
+}
+
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 120px;
+    width: 100%;
+    margin-left: -5px;
+}
+
+
+.footer-box {
+    display: flex;
+    width: 100%;
+}
+
+
+.footer-inside  {
+    padding: 20px;
+    font-size: 12px;
+
+}
+
+
+.ligth-green {
+    color: rgb(92, 214, 21);
+} 
+
+.ligth-green:hover{
+
+    text-shadow: 0 0 5px rgb(92, 214, 21),  /* Primer nivel de sombra cercano */
+                 0 0 10px rgb(92, 214, 21), /* Sombra intermedia */
+                 0 0 20px rgb(92, 214, 21), /* Sombra más brillante */
+                 0 0 40px rgb(92, 214, 21), /* Halo extendido */
+                 0 0 80px rgb(92, 214, 21); /* Luz intensa extendida */
+            }
+
+
+.footer-link {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+
+.linea {
+    width: 65%;
+    margin: auto;
+}
+
+
+.subscription {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.subscribe-button {
+    background-color: #0070ba; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscribe-button:hover {
+    background-color: #005ea6; /* Color al pasar el ratón */
+}
+
+
+.donation {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.donate-button {
+    background-color: #0070ba; /* Color de fondo de PayPal */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.donate-button:hover {
+    background-color: #005ea6; /* Color al pasar el ratón */
+}
+
+.copyrigth {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0;
+    
+}
